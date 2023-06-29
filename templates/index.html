@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>File Upload Form</title>
+  <style>
+    .a{
+      display:block;
+    }
+    h1{
+     width:60%;
+      margin-left:20%;
+      margin-right:20%;
+      font-family:sans-serif;
+      font-size:42px;
+      font-weight:200;
+      
+    }
+    .container{
+      display:block;
+      
+      border-color:grey;
+      border-radius:8px;
+      width:30%;
+      margin-left:60%;
+      
+      margin-top:1rem;
+      height:35rem;
+      background-color:#213363;
+    }
+    body{
+      background-image:url('https://www.evgroup.com/fileadmin/_processed_/8/7/csm_Press_Photo_DELO_Wafer-Level_NIL_and_Lens_Molding_5f3a063cf6.jpg');
+      background-size:cover;
+      background-repeat:no-repeat;
+      height:100%;
+      width:100%;
+    }
+    .submit{
+      display:block;
+      width:50%;
+      margin-left:25%;
+      margin-right:25%;
+      padding-left:0%;
+      padding-right:0%;
+      font-size:22px;
+        height:3rem;
+        border-radius:8px;
+        border-style:none;
+        background-color:#A1C2F1;
+        opacity:1;
+    }
+    .submit:hover{
+      background-color:#D3D04F;
+    }
+    h2{
+      display:block;
+      color:white;
+      font-family:sans-serif;
+      font-weight:200;
+      font-size:16px;
+      padding-top:10%;
+      padding-left:35%;
+      padding-right:35%;
+     
+    }
+ 
+    input{
+      padding-left:25%;
+     padding-right:25%;
+      width:50%;
+      margin-bottom:1rem;
+      height:3rem;
+      opacity:0.5;
+      font-size:16px;
+    }
+    .img{
+      width:60%;
+      height:10rem;
+      padding:10% 20%;
+      opacity:0.5;
+     
+    }
+  </style>
+</head>
+<body>
+  <div class="a"><h1>Wafer Fault Detection</h1></div>
+  <div class="container">
+    <h2>{{result}}</h2>
+    <h2>Upload a File</h2>
+    <img class="img" src="http://cdn.onlinewebfonts.com/svg/img_84925.png"></img>
+    <form method="POST" action="/upload" enctype="multipart/form-data">
+      <input type="file" class="file" name="file">
+      <input type="submit" class="submit" value="Upload">
+    </form>
+    
+  </div>
+</body>
+</html>
